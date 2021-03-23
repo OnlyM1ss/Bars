@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-D:\Bars\Bars_Client\Bars_Client\obj\Debug\netcoreapp3.1\
+D:\Bars\Bars_Client\Bars_Client\obj\Release\netcoreapp3.1\
 Bars_Client
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 D:\Bars\Bars_Client\Bars_Client\App.xaml
 1-1711142684
 
@@ -16,5 +16,5 @@ D:\Bars\Bars_Client\Bars_Client\App.xaml
 194910602098
 View\MainWindow.xaml;
 
-False
+True
 

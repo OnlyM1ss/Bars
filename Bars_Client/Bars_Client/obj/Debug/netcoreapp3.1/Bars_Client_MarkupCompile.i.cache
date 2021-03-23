@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\source\repos\Bars_Client\Bars_Client\obj\Debug\netcoreapp3.1\
+D:\Bars\Bars_Client\Bars_Client\obj\Debug\netcoreapp3.1\
 Bars_Client
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\User\source\repos\Bars_Client\Bars_Client\App.xaml
+D:\Bars\Bars_Client\Bars_Client\App.xaml
 1-1711142684
 
 91255974614
 194910602098
 View\MainWindow.xaml;
 
-True
+False
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\Bars_Client\\Bars_Client\\Bars_Client.csproj": {}
+    "D:\\Bars\\Bars_Client\\Bars_Client\\Bars_Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\Bars_Client\\Bars_Client\\Bars_Client.csproj": {
+    "D:\\Bars\\Bars_Client\\Bars_Client\\Bars_Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Bars_Client\\Bars_Client\\Bars_Client.csproj",
+        "projectUniqueName": "D:\\Bars\\Bars_Client\\Bars_Client\\Bars_Client.csproj",
         "projectName": "Bars_Client",
-        "projectPath": "C:\\Users\\User\\source\\repos\\Bars_Client\\Bars_Client\\Bars_Client.csproj",
+        "projectPath": "D:\\Bars\\Bars_Client\\Bars_Client\\Bars_Client.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\Bars_Client\\Bars_Client\\obj\\",
+        "outputPath": "D:\\Bars\\Bars_Client\\Bars_Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

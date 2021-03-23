@@ -13,7 +13,10 @@ namespace Bars_Client.Model
         public int Id { get; set; }
         public DateTime Data { get; set; }
         public int Number { get; set; }
-        public bool isActual { get; }
+        public bool isActual
+        {
+            get => isActialValid();
+        }
         public DateTime DataOfChange { get; set; }
 
 
@@ -54,7 +57,12 @@ namespace Bars_Client.Model
         {
             throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// if change of document was more then 60 days return false else true
+        /// </summary>
+        /// <returns>actual or not</returns>
+        private bool isActialValid() =>
+            DateTime.Now.AddDays(-60) <= DataOfChange;
         
     }
 }
