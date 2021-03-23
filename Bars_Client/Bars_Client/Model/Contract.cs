@@ -19,8 +19,12 @@ namespace Bars_Client.Model
         }
         public DateTime DataOfChange { get; set; }
 
+        public Contract(string ip,int port)
+        {
+            addressHelper = new AddressHelper(ip, port);
+        }
 
-        private AddressHelper addressHelper = new AddressHelper("localhost", 59357);
+        private AddressHelper addressHelper { get; }
         public Contract GetContractById(int id)
         {
             throw new NotImplementedException();

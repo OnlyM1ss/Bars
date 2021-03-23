@@ -31,9 +31,9 @@
                 </Style>
             </StackPanel.Resources>
             <TextBlock Text="Ip" />
-            <TextBox />
+            <TextBox Text="{Binding Ip,Mode=TwoWay}"/>
             <TextBlock Text="Port" />
-            <TextBox />
+            <TextBox Text="{Binding Port,Mode=TwoWay}"/>
             <Button Content="Получить" Command="{Binding GetContracts}"/>
         </StackPanel>
     </Grid>

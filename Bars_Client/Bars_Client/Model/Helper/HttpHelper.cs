@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net;
+using System.Windows;
 
 namespace Bars_Client.Model
 {
@@ -37,14 +38,15 @@ namespace Bars_Client.Model
                 }
                 catch (WebException)
                 {
-                    //TODO Добавить оповещение об ошибке
+                    MessageBox.Show("Nothing here");
                     return null;
                 }
             }
             catch (System.UriFormatException)
             {
                 //TODO неверный url push 
-                throw;
+                MessageBox.Show("Wrong Ip");
+                return string.Empty;
             }
         }
 
