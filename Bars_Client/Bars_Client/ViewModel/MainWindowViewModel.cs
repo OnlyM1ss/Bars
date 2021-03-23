@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Text;
+using System.Threading.Tasks;
 using Bars_Client.Model;
+using Prism.Commands;
 using Prism.Mvvm;
 
 namespace Bars_Client.ModelView
@@ -14,7 +16,14 @@ namespace Bars_Client.ModelView
         public MainWindowViewModel()
         {
             contractModel = new Contract();
-            contracts = contractModel.GetContracts();
+            GetContracts = new DelegateCommand((() =>
+            {
+                Task.Run((() =>
+                {
+                    contracts = contractModel.GetContracts();
+                    OnPropertyChanged("Contracts");
+                }));
+            }));
         }
 
         public List<Contract> Contracts
@@ -28,5 +37,6 @@ namespace Bars_Client.ModelView
         }
 
         private List<Contract> contracts { get; set; }
+        public DelegateCommand GetContracts { get; }
     }
 }

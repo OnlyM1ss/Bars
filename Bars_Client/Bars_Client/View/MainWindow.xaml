@@ -11,6 +11,30 @@
         <modelView:MainWindowViewModel />
     </Window.DataContext>
     <Grid MinHeight="100" MaxHeight="300">
-        <DataGrid ItemsSource="{Binding Contracts}" />
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <DataGrid ItemsSource="{Binding Contracts,Mode=TwoWay}"
+                  Grid.RowSpan="2" />
+        <StackPanel Grid.Column="1">
+            <StackPanel.Resources>
+                <Style TargetType="TextBox">
+                    <Setter Property="Margin" Value="5,0,300,0" />
+                </Style>
+                <Style TargetType="Button">
+                    <Setter Property="Margin" Value="5,15,330,0" />
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Ip" />
+            <TextBox />
+            <TextBlock Text="Port" />
+            <TextBox />
+            <Button Content="Получить" Command="{Binding GetContracts}"/>
+        </StackPanel>
     </Grid>
 </Window>
