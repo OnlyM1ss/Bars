@@ -1,3 +1,4 @@
+[![.NET](https://github.com/OnlyM1ss/Bars/actions/workflows/dotnet.yml/badge.svg)](https://github.com/OnlyM1ss/Bars/actions/workflows/dotnet.yml)
 # Bars
 This Repository contain Server and wpf client for work with server
 ## Client 
